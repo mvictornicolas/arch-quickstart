@@ -2,8 +2,12 @@ cp ~/.config/i3/config ~/.config/i3/config.bkp
 
 sudo pacman -Syu
 sudo pacman -S flatpak
+sudo pacman -S snap
 sudo pacman -S firefox
 sudo pacman -S ranger
+sudo pacman -S qutebrowser
+sudo pacman -S copyq
+sudo pacman -S docker
 
 sudo pacman-key --init
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -23,9 +27,16 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 p10k configure
 
 flatpak install chrome
-flatpak install code
 flatpak install dbeaver
 flatpak install teams
+flatpak install anydesk
+
+yay -S --noconfirm --needed snapd
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo pacman -S gnome-keyring libsecret libgnome-keyring
+sudo snap install code --classic
+
 
 echo "Enable tab sleeping on chrome for RAM saving at chrome://flags#freeze"
 
