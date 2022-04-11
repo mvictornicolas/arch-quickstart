@@ -16,7 +16,9 @@ sudo pacman -S pulseaudio
 sudo pacman -S pavucontrol
 sudo pacman -S guake
 sudo pacman -S gnome-calendar
-sudo pacman -S alsa-lib alsa-utils 
+sudo pacman -S virtualbox
+sudo pacman -S telegram-desktop
+#sudo pacman -S alsa-lib alsa-utils 
 
 sudo pacman-key --init
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -31,6 +33,8 @@ sudo pacman -S yay
 yay -S pamac-aur
 
 yay -S --noconfirm zsh-theme-powerlevel10k-git
+
+sudo pacman -S onlyoffice-bin
 
 echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
 p10k configure
