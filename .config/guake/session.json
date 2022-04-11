@@ -1,0 +1,25 @@
+{
+    "schema_version": 2,
+    "timestamp": 1649700996,
+    "workspace": {
+        "0": [
+            [
+                {
+                    "panes": [
+                        {
+                            "type": "term",
+                            "directory": "/home/vinimo/.config",
+                            "custom_colors": {
+                                "fg_color": null,
+                                "bg_color": null,
+                                "palette": null
+                            }
+                        }
+                    ],
+                    "label": "cd ~/.config",
+                    "custom_label_set": false
+                }
+            ]
+        ]
+    }
+}

@@ -8,6 +8,15 @@ sudo pacman -S ranger
 sudo pacman -S qutebrowser
 sudo pacman -S copyq
 sudo pacman -S docker
+sudo pacman -S dunst
+sudo pacman -S playerctl
+sudo pacman -S gnome-clocks
+sudo pacman -S pulseeffects
+sudo pacman -S pulseaudio
+sudo pacman -S pavucontrol
+sudo pacman -S guake
+sudo pacman -S gnome-calendar
+sudo pacman -S alsa-lib alsa-utils 
 
 sudo pacman-key --init
 sudo pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -30,6 +39,7 @@ flatpak install chrome
 flatpak install dbeaver
 flatpak install teams
 flatpak install anydesk
+flatpak install obsidian
 
 yay -S --noconfirm --needed snapd
 sudo systemctl enable --now snapd.socket
