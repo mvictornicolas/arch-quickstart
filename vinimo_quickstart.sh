@@ -18,6 +18,10 @@ sudo pacman -S guake
 sudo pacman -S gnome-calendar
 sudo pacman -S virtualbox
 sudo pacman -S telegram-desktop
+sudo pacman -S speedcrunch
+sudo pacman -S ark
+sudo pacman -S openconnect
+sudo pacman -S scrcpy
 #sudo pacman -S alsa-lib alsa-utils 
 
 sudo pacman-key --init
